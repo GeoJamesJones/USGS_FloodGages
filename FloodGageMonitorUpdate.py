@@ -24,6 +24,7 @@ historic_lyr = layer.layers[1]
 url ='https://waterwatch.usgs.gov/webservices/realtime?region=pr&format=json'
 
 # Main Script
+print("Making request...")
 while True:
     response = requests.get(url)
     data = response.json()
