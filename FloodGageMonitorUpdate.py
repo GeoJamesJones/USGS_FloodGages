@@ -93,9 +93,9 @@ while True:
 
     elapsed = done - start
     out_elapsed = out_done - out_start
-    print('Total time for updates: ' + str(out_elapsed) + ', sleeping for 5 minutes...')
+    print('Total time for updates: ' + str(out_elapsed) + ', sleeping for 1 hour...')
     
-    time.sleep(300)
+    time.sleep(3600)
 
 
 
