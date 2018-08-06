@@ -42,6 +42,7 @@ def exitScript():
         print(msg)
         F.write(pymsg)
         F.write(msg)
+	F.close()
 
 
 # Main Script
