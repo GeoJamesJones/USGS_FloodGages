@@ -37,11 +37,8 @@ def exitScript():
         tb = sys.exc_info()[2]
         tbinfo = traceback.format_tb(tb)[0]
         pymsg  = "PYTHON ERRORS:\n Traceback info:\n" + tbinfo + "Error info:\n" + str(sys.exc_info()[1])
-        msg = "\nArcPy ERRORS:\n" + arcpy.GetMessages(2) + "\n"
         print(pymsg)
-        print(msg)
         F.write(pymsg)
-        F.write(msg)
     F.close()
 
 
